@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="description" content="Description">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    .custom-link{
+      border: #1E6FFE solid 2px;
+      display: flex;
+      justify-content: space-between;
+      padding: 10px;
+      border-radius: 20px;
+      width: 300px;
+      align-items: center;
+      font-size: 15pt;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .custom-link img{
+      border-radius: 10px;
+    }
+    .custom-link:hover{
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: '',
+      repo: '',
+      loadSidebar: true,
+      themeColor: '#1E6FFE',
+      beforeEach: function(content) {
+        return content; 
+      }
+    };
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="./plugin.js"></script>
+</body>
+</html>
